@@ -303,7 +303,7 @@ button a{
 #contactForm{
 	position: absolute;
 	line-height: 1.8em;
-	top:10em;
+	top:4em;
 	border: solid 1px black;
 	padding: 3em 2em;
 	letter-spacing: 0.2em;
@@ -534,7 +534,7 @@ footer li:nth-child(1){
 
 /** Buttons **/
 .homepageButton{
-	display: block;
+	display: inline-block;
 	margin-top: 3em;
 	margin-bottom: 1em;
 	padding: 1em 3em;
@@ -571,17 +571,17 @@ footer li:nth-child(1){
 /** Small devices (landscape phones, 575px and down) **/
 @media screen and (max-width: 576px) {
 
-
 }
 
 /**Medium devices (tablets, 767px and down) **/
 @media screen and (max-width: 768px) {
 
-
+	
 
 	#main-heading{
 		margin-top: 40%;
 	}
+
 
 	#subHeading-3{
 		top: 5em;
@@ -621,6 +621,7 @@ footer li:nth-child(1){
 	#contactForm{
 		top:21em;
 		margin-bottom: 3em;
+		line-height: 1.4em;
 	}
 
 	.insideImage2{
@@ -657,7 +658,7 @@ footer li:nth-child(1){
 	}
 
 	h2{
-		font-size: 60px;
+		font-size: 50px;
 	}
 
 	small{
@@ -692,6 +693,7 @@ footer li:nth-child(1){
 	footer ul{
 		padding: 1em 0;
 	}
+
 
 }
 

@@ -38,9 +38,9 @@ $(document).ready(function() {
 	$(window).on('scroll', function () {  
 
 
-
+	// Sticky xIcon class add/remove
 		var scroll = $(window).scrollTop();
-		
+
 		console.log(scroll + '-' + yOffset);
 
 		if(scroll >= yOffset){
@@ -51,11 +51,7 @@ $(document).ready(function() {
 		}
 
 
-
-
-
-
-
+	// Subheading slide in animations
 	  if( $('.animateText').offset().top < ( $(window).scrollTop() + ($(window).height() / 1.25) ) ){
 	    $('.animateText').addClass('visible');
 	  }else{
