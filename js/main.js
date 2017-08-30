@@ -14,23 +14,47 @@ $(document).ready(function() {
 	// $('#mainContent').hide();
 	
 
-	// sections sliding up
-	$('#xIcon').on('click', function(){
-        $("#section1").slideUp(1000, function(){
+	// // sections sliding up
+	// $('#xIcon').on('click', function(){
+ //        $("#section1").slideUp(1000, function(){
 
-        	//write event here for 'x' icon to now change class and be position absolute in the centre at top fixed (maybe fade in before rest of container does too to make natural transition)
-        	$('#xIcon').addClass('stickyX')
-        	console.log('test');
+ //        	//write event here for 'x' icon to now change class and be position absolute in the centre at top fixed (maybe fade in before rest of container does too to make natural transition)
+ //        	$('#xIcon').addClass('stickyX')
+ //        	console.log('test');
 
 
-        	//main content fading in 
-        	// $('#mainContent').fadeIn(1000);
-        });    
-    });
+ //        	//main content fading in 
+ //        	// $('#mainContent').fadeIn(1000);
+ //        });    
+ //    });
+
+	
+	// console.log($('#xIcon').offset().top);
+	var yOffset = $('#section-2').offset().top;
+
 
 
 	// text animate
 	$(window).on('scroll', function () {  
+
+
+
+		var scroll = $(window).scrollTop();
+		
+		console.log(scroll + '-' + yOffset);
+
+		if(scroll >= yOffset){
+			$('.xIcon').addClass('sticky');
+		}else if(scroll < yOffset){
+			$('.xIcon').removeClass('sticky');
+			console.log('remove')
+		}
+
+
+
+
+
+
 
 	  if( $('.animateText').offset().top < ( $(window).scrollTop() + ($(window).height() / 1.25) ) ){
 	    $('.animateText').addClass('visible');
@@ -72,13 +96,6 @@ $(document).ready(function() {
 
 
 	});
-
-
-
-	
-
-
-
 });
 
 
