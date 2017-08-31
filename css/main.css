@@ -388,6 +388,7 @@ footer li:nth-child(1){
 
 .xIcon span:hover{
 	color:rgba(208,170,151,0.6);
+
 }
 
 
@@ -403,6 +404,7 @@ footer li:nth-child(1){
 	opacity: 0.8;
 	transition: opacity 0.25s ease-in-out;
 }
+
 
 
 
@@ -570,6 +572,35 @@ footer li:nth-child(1){
 
 /** Small devices (landscape phones, 575px and down) **/
 @media screen and (max-width: 576px) {
+
+	#section1{
+		overflow: hidden;
+	}
+
+	h2{
+		font-size: 
+	}
+
+	#imageFill1{
+		display: none;
+	}
+
+	#image-3{
+		display: none;
+	}
+
+	#section-2{
+		border-top: 0;
+	}
+
+	#copy-paragraph{
+		top: 17em;
+	}
+	
+	#section4Element{
+	font-size: 20em;
+	margin-left: -400px;
+	}
 
 }
 

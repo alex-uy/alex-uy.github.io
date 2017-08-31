@@ -50,6 +50,8 @@ $(document).ready(function() {
 			console.log('remove')
 		}
 
+	
+
 
 	// Subheading slide in animations
 	  if( $('.animateText').offset().top < ( $(window).scrollTop() + ($(window).height() / 1.25) ) ){
