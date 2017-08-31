@@ -573,15 +573,91 @@ footer li:nth-child(1){
 /** Small devices (landscape phones, 575px and down) **/
 @media screen and (max-width: 576px) {
 
+	body{
+		font-size: 10px;
+	}
+
 	#section1{
 		overflow: hidden;
 	}
 
-	h2{
+	#section-3{
+		height: 
+	}
+
+	#section-4{
+		height: 50em;
+		margin-bottom:0;
+	}
+
+	#section-5{
+		height: 45em;
+		border-left: solid 35px rgba(208,170,151,0.6);
+		border-right: solid 35px rgba(208,170,151,0.6);
+		border-top: solid 40px rgba(208,170,151,0.6);
+		border-bottom: solid 40px rgba(208,170,151,0.6);
+
+	}
+
+	p{
+		font-size: 14px;
+	}
+
+	footer{
+		font-size: 12px;
+	}
+
+	#subHeading-1{
+		top: 3em;
 		font-size: 
 	}
 
+	#subHeading-3{
+		left:1em;
+	}
+
+	#subheading-2{
+		display: block;
+		text-align: center;
+		top: 0;	
+	}
+
+	#largeTypeContainer{
+		text-align: center;
+		padding: 1em;
+	}
+
+	#largeType{
+		display: block;
+		text-align: center;
+	}
+
+	#copy-paragraph2{
+		text-align: center;
+		top:15em;
+	}
+
+
+
 	#imageFill1{
+		display: none;
+	}
+
+	#image-2{
+		border-radius: 0;
+		border-bottom: solid 25px rgba(208,170,151,0.6);
+		border-left: none;
+		height: 20em;
+		position: absolute;
+		top: 40em;
+		background-position: center;
+	}
+
+	.insideImage2{
+		display: none;
+	}
+
+	#imageFill2{
 		display: none;
 	}
 
@@ -593,14 +669,20 @@ footer li:nth-child(1){
 		border-top: 0;
 	}
 
+	#section-3{
+		height: 65em;
+	}
+
 	#copy-paragraph{
-		top: 17em;
+		top: 22em;
 	}
 	
 	#section4Element{
 	font-size: 20em;
-	margin-left: -400px;
+	margin-left: -350px;
 	}
+
+
 
 }
 
