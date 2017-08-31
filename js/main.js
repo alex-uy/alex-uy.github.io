@@ -50,6 +50,12 @@ $(document).ready(function() {
 			console.log('remove')
 		}
 
+
+	//nav overlay
+	$('.sticky').on('click', function(){
+		$('body').addClass('navOpen');
+	});
+
 	
 
 
@@ -83,7 +89,7 @@ $(document).ready(function() {
 	  if( $('.animateSection4Element').offset().top < ( $(window).scrollTop() + ($(window).height() / 1.5) ) ){  
 	    $('.animateSection4Element').addClass('visible');
 	  }else{
-	    $('.animateText4').removeClass('visible');
+	    $('.animateSection4Element').removeClass('visible');
 	  }
 
 	  if( $('.animateBtn').offset().top < ( $(window).scrollTop() + $(window).height() ) ){

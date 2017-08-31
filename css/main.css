@@ -1,3 +1,21 @@
+/* nav overlay */
+.navOpen{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(208,170,151);
+	transform: transition;
+	transition: opacity 0.6s, opacity 1s;
+	z-index: 100;
+}
+
+.navClosed{
+	opacity: 0;
+	transform: transition;
+	transition: opacity 0.6s, opacity 1s;
+}
+
+
 /* animation */
 
 .animateLanding{
@@ -605,6 +623,7 @@ footer li:nth-child(1){
 
 	footer{
 		font-size: 12px;
+		margin-bottom:5em;
 	}
 
 	#subHeading-1{
@@ -690,24 +709,75 @@ footer li:nth-child(1){
 @media screen and (max-width: 768px) {
 
 	
+	#section-2{
+		margin-bottom:0;
+	}
+
+	##section-3{
+		height: 55em;
+	}
+
+	#section-4{
+		margin-top: 6em;
+		margin-bottom: 0;
+	}
+
+
+	#section-5{
+		height: 100vh;
+		border-left: solid 35px rgba(208,170,151,0.6);
+		border-right: solid 35px rgba(208,170,151,0.6);
+		border-top: solid 40px rgba(208,170,151,0.6);
+		border-bottom: solid 40px rgba(208,170,151,0.6);
+
+	}
 
 	#main-heading{
 		margin-top: 40%;
 	}
 
+	#subHeading-1{
+		top: 7em;
+		text-align: center;
+	}
+
+	#subheading-2{
+		display: block;
+		text-align: center;
+	}
 
 	#subHeading-3{
 		top: 5em;
+		left: 2em;
 	}
 
 	#subHeading-4{
 		color: #9999;
 	}
 
+	#section4Element{
+		top: 0.05em;
+	}
+
+	#largeTypeContainer{
+		display: block;
+		text-align: center;
+		padding: 3em;
+
+	}
 	
 	blockquote{
 		display: none;
 	}
+
+	#copy-paragraph{
+		text-align: center;
+	}
+
+	#copy-paragraph2{
+		top: 18em;
+	}
+
 
 	#copy-paragraph3{
 		top: 35em;
@@ -727,8 +797,32 @@ footer li:nth-child(1){
 		display: none;
 	}
 
+	#image-2{
+		bottom: 0;
+		border-radius:0;
+		border-left: 0;
+		height: 23em;
+		z-index: 0;
+		background-position: center;
+		border-bottom: 30px solid rgba(208,170,151,0.6);
+	}
+
 	#image-3{
 		height: 30em;
+	}
+
+	.insideImage2{
+		display: none;
+	}
+
+	#imageFill2{
+		display: none;
+	}
+
+
+	.homepageButton{
+		display: inline-block;
+
 	}
 
 	#contactForm{
