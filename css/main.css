@@ -661,6 +661,16 @@ footer li:nth-child(1){
 /** Small devices (portrait phones, 380px and down) **/
 @media screen and (max-width: 380px) {
 
+	#nav a{
+		font-size: 40px;
+		display: block;
+		text-align: center;
+	}
+
+	#nav a:hover{
+	transform: scale(1.2);
+	}
+
 	.animateText{
 		font-size: 2.9em;
 	}
