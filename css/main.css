@@ -3,20 +3,20 @@
 
 /* nav overlay */
 #nav{
-	margin-top: 200px;
 	z-index: 100;
 	background-color: rgb(227,204,193);
-	display: inline-block;
+	display:block;
+	margin-top: 200px;
 	font-family: 'didot', serif;
 }
 
 #nav a{
 	display: block;
 	text-decoration: none;
-	text-align: center;
 	font-size: 50px;
 	padding: 10px;
 	color: #666;
+	text-align: center;
 	transition: scale ease-out 3s;
 }
 
@@ -194,7 +194,7 @@ small{
 }
 
 #largeType{
-	padding-top:0.5em;
+	padding: 0.5em 2em 0 0;
 	font-size: 4.5em;
 }
 
@@ -431,7 +431,7 @@ label{
 
 
 footer{
-	font-family: 'Montserrat', sans-serif;, sans-serif;, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	border-top: solid 1px #333;
 	padding: 25px;
 	height: 12em;
@@ -488,7 +488,7 @@ footer li:nth-child(1){
 	text-align: center;
 	height: 0.3em;
 	font-size: 7em;
-	background-color:rgb(208,170,151);
+	background:#e3ccc1;
 	opacity: 0.8;
 	transition: opacity 0.25s ease-in-out;
 }
@@ -685,6 +685,7 @@ footer li:nth-child(1){
 
 	#largeType{
 		font-size:2.5em;
+		padding: 0;
 	}
 
 	#subHeading3{
