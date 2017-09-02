@@ -658,7 +658,23 @@ footer li:nth-child(1){
 
 
 /** Media Queries **/
+/** Small devices (portrait phones, 380px and down) **/
+@media screen and (max-width: 380px) {
+	.animateText{
+		font-size: 2.5em;
+	}
 
+	.animateText2{
+		font-size: 2.5em;
+	}
+
+	#largeType{
+		font-size:2.5em;
+	}
+
+	#subHeading3{
+		font-size: 2em;	
+	}
 /** Small devices (landscape phones, 575px and down) **/
 @media screen and (max-width: 576px) {
 
@@ -829,7 +845,7 @@ footer li:nth-child(1){
 
 
 	#section-5{
-		height: 100vh;
+		height: 100%;
 		border-left: solid 35px rgba(208,170,151,0.6);
 		border-right: solid 35px rgba(208,170,151,0.6);
 		border-top: solid 40px rgba(208,170,151,0.6);
