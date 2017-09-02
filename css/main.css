@@ -660,12 +660,27 @@ footer li:nth-child(1){
 /** Media Queries **/
 /** Small devices (portrait phones, 380px and down) **/
 @media screen and (max-width: 380px) {
+
 	.animateText{
-		font-size: 2.5em;
+		font-size: 2.9em;
 	}
 
 	.animateText2{
-		font-size: 2.5em;
+		font-size: 2.8em;
+		top: 3em;
+	}
+
+	.animateText3{
+		font-size: 1.5em;
+		top: 3em;
+		margin-left: -1em;
+		height: 4em;
+		padding-top: 0.2em;
+		padding-left: 0.5em;
+	}
+
+	#section4Element{
+		margin-top: -0.05em;
 	}
 
 	#largeType{
