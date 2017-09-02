@@ -6,13 +6,17 @@
 //     $('#section1').stop(true, false).slideUp();
 // });
 
+	function overlayShow() {
+  		document.getElementById("overlay").className += " overlayContent";
+	}
+
+	function overlayHide() {
+	  document.getElementById("overlay").classList.remove("overlayContent");
+	}
 
 $(document).ready(function() {
 
 
-	//hide all main content on loading
-	// $('#mainContent').hide();
-	
 
 	// // sections sliding up
 	// $('#xIcon').on('click', function(){
@@ -27,7 +31,6 @@ $(document).ready(function() {
  //        	// $('#mainContent').fadeIn(1000);
  //        });    
  //    });
-
 	
 	// console.log($('#xIcon').offset().top);
 	var yOffset = $('#section-2').offset().top;
@@ -50,11 +53,6 @@ $(document).ready(function() {
 			console.log('remove')
 		}
 
-
-	//nav overlay
-	$('.sticky').on('click', function(){
-		$('body').addClass('navOpen');
-	});
 
 	
 
