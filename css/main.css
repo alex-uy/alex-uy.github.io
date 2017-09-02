@@ -693,6 +693,10 @@ footer li:nth-child(1){
 		margin-top: -0.05em;
 	}
 
+	#subHeading-4{
+		color: #333;
+	}
+
 	#largeType{
 		font-size:2.5em;
 		padding: 0;
