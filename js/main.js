@@ -14,6 +14,7 @@
 	  document.getElementById("overlay").classList.remove("overlayContent");
 	}
 
+
 $(document).ready(function() {
 
 
@@ -31,11 +32,12 @@ $(document).ready(function() {
  //        	// $('#mainContent').fadeIn(1000);
  //        });    
  //    });
+
 	
 	// console.log($('#xIcon').offset().top);
 	var yOffset = $('#section-2').offset().top;
 
-
+		
 
 	// text animate
 	$(window).on('scroll', function () {  
@@ -95,6 +97,9 @@ $(document).ready(function() {
 	  }else{
 	    $('.animateBtn').removeClass('visible');
 	  }
+
+
+
 
 
 	});

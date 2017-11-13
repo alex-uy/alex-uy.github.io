@@ -17,7 +17,7 @@
 	padding: 10px;
 	color: #666;
 	text-align: center;
-	transition: scale ease-out 3s;
+	transition: 0.2s ease-in-out;
 }
 
 #nav a:hover{
@@ -44,7 +44,7 @@
   width: 100%;
   height: 0;
   background:rgb(227,204,193);
-  transition: height 0.3s ease-out;
+  transition: height 0.3s ease-in-out;
   overflow-x:hidden;
   z-index: 99;
 }
@@ -52,6 +52,7 @@
 .overlayContent {
   height: 100%;
   transition: height 0.3s ease-in-out;
+  z-index: 101;
 }
 
 
@@ -127,7 +128,7 @@
   	transform:translateY(200px);
   	display:inline-block;
   	transition: transform 0.4s, opacity 0.3s;
-}
+}2
 
 .animateBtn{
 	opacity:0;
@@ -211,8 +212,6 @@ button a{
 
 
 
-
-
 /** Copy sections **/
 #copy-paragraph{
 	position: absolute;
@@ -235,8 +234,12 @@ button a{
 #subHeading-1{
 	position: absolute;
 	top: 3em;
-	padding-left: 1.5em;
-
+	padding: 1em 1em 1.3em 1.5em;
+	border-left: rgb(208,170,151) solid 45px;
+    border-top: solid 1px #D0AA97;
+    border-bottom: solid 1px #D0AA97;
+    border-right: solid 1px #D0AA97;
+    margin-left: 50px;
 }
 
 
@@ -389,7 +392,7 @@ button a{
 
 #contactForm{
 	position: absolute;
-	line-height: 1.8em;
+	line-height: 1.5em;
 	top:4em;
 	border: solid 1px black;
 	padding: 3em 2em;
@@ -453,7 +456,32 @@ footer li:nth-child(1){
 	font-weight: bold;
 }
 
+.scrollDown{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 5%;
+	left: 50%;
+	margin-left: -40px;
+	font-family: 'montserrat' lighter;
+	letter-spacing: 1.5px;
+	font-size: 14px;
+	z-index: 100;
+	
+}
 
+.scrollDown a{
+	text-decoration: none;
+	color: #666;
+}
+
+.scrollDown a:hover{
+	color:rgba(208,170,151,0.6);
+}
+
+.scrollDown i{
+	font-size:5em;
+}
 
 .xIcon{
 	display: block;
@@ -476,7 +504,6 @@ footer li:nth-child(1){
 
 .xIcon span:hover{
 	color:rgba(208,170,151,0.6);
-
 }
 
 
@@ -490,8 +517,9 @@ footer li:nth-child(1){
 	font-size: 7em;
 	background:#e3ccc1;
 	opacity: 0.8;
-	transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
 }
+
 
 
 
@@ -529,7 +557,7 @@ footer li:nth-child(1){
 #image-1{
 	position: absolute;
 	height: 35em;
-	background-image: url(../images/desk-bg.jpg);
+	background-image: url(../images/mockups/margot2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -543,9 +571,9 @@ footer li:nth-child(1){
 #image-2{
 	position: absolute;
 	height: 40em;
-	background-image: url(../images/znrb2.jpg);
+	background-image: url(../images/mockups/photography.jpg);
 	background-size: cover;
-	background-position: top;
+	background-position: center;
 	background-width:100%;
 	background-repeat:no-repeat;
 	border-left: rgba(208,170,151,0.6) solid 45px;
@@ -558,11 +586,10 @@ footer li:nth-child(1){
 #image-3{
 	position: absolute;
 	height: 40em;
-	background-image: url(../images/znrb3.jpg);
+	background-image: url(../images/mockups/ollie&max3.jpg);
 	background-size: cover;
-	background-repeat: none;
 	border-radius: 15px;
-	background-origin: content-box;
+	
 }
 
 
@@ -594,7 +621,7 @@ footer li:nth-child(1){
 .insideImage2{
 	height: 25em;
 	top: 10em;
-	background-image: url(../images/znrb4.jpg);
+	background-image: url(../images/mockups/alexuy.jpg);
 	background-size: cover;
 	background-position: center;
 	border: solid #fff 25px;
@@ -602,9 +629,9 @@ footer li:nth-child(1){
 }
 
 .insideImage4{
-	height: 25em;
-	top: 10em;
-	background-image: url(../images/znrb4.jpg);
+	height: 40em;
+	top: 5em;
+	background-image: url(../images/mockups/alexuy.jpg);
 	background-size: cover;
 	background-position: center;
 	border: solid #fff 25px;
@@ -851,8 +878,8 @@ footer li:nth-child(1){
 		font-size: 14px;
 	}
 
-		#nav a{
-		font-size: 40px;
+	#nav a{
+	font-size: 40px;
 	}
 
 	#nav a:hover{
@@ -910,6 +937,10 @@ footer li:nth-child(1){
 		top: 0.05em;
 	}
 
+	#largeType{
+		font-size: 2em;
+	}
+
 	#largeTypeContainer{
 		display: block;
 		text-align: center;
@@ -956,7 +987,7 @@ footer li:nth-child(1){
 		bottom: 0;
 		border-radius:0;
 		border-left: 0;
-		height: 23em;
+		height: 20em;
 		z-index: 0;
 		background-position: center;
 		border-bottom: 30px solid rgba(208,170,151,0.6);

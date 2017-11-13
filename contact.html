@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Contact | Alex Uy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <div id="wrapper"> 
+
+
+        <div class="contact">
+            <span>CONTACT</span>
+        </div>
+        
+        <div id="form" class="section"> <!-- start of section 1 -->
+
+            <form action='form.php' id="contactForm" class="col-md-10 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2"> <!-- Start of Form -->
+                <label for="name"><small>Hey! My name is: &nbsp;</small></label>
+                    <input id="name" type="text" name="name" placeholder=" First Last" required>
+
+                <label for="email"><small>My email address is: &nbsp;</small></label>
+                    <input id="email" type="email" name="email" placeholder="email@example.com" required>
+                        <br>
+                <label for="message"><small>Together we should:</small></label>
+                    <br>
+                    <textarea id="message" type="text" rows="3" placeholder="Work on a project / Get Coffee / Collaborate" required></textarea>
+
+                
+               <!--  <label><small>Do you like pineapple on pizza's: (Choose Wisely)</small></label>
+                    <br>
+                    <select required class="formSelect" name="sauce">
+                      <option name="pineapple" value="no">No</option>
+                      <option name="pineapple" value="aLittle">A Little Bit</option>
+                      <option name="pineapple" value="lots">Lots of it!</option>
+                      <option name="pineapple" value="imADickhead">Are you kidding me?</option>
+                    </select>
+                    <br><br> -->
+
+
+                <input class="formButton" type="submit" value="SUBMIT">
+                <input class="formButton" type="reset" value="RESET">
+            </form> <!-- Enf of Form -->
+
+        </div> <!-- end of section 1 -->
+
+        <div style="position: absolute; right:0; bottom:0;"><h6><a href="index.html">HOME</a></h6></div>
+        
+
+    </div><!-- end of wrapper -->
+    <script type="javascript" src="js/main.js"></script>
+
+</body>
+</html>

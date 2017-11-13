@@ -1,0 +1,125 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+/** Typography **/
+
+h1{
+	font-family: 'didot', serif;
+	font-size: 80px;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+
+}
+
+h2{
+	font-family: 'didot', serif;
+	font-size: 70px;
+	letter-spacing: 4.5px;
+	margin:0;
+	padding: 0;
+}
+
+h6{
+	font-family: 'Montserrat', sans-serif;;
+	font-weight: lighter;
+	letter-spacing: 0.12em;
+}
+
+p{
+	letter-spacing: 0.5;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;, sans-serif;;
+	font-weight: lighter;
+	line-height: 1.8em;
+}
+
+blockquote{
+	display: inline-block;
+	font-family: 'futura';
+	letter-spacing: 0.8px;
+	padding: 0.5em 1em;
+	position: absolute;
+	top:5em;
+	color: rgba(208,170,151,1);
+	border-left: none;
+	text-align: justify;
+}
+
+small{
+	font-family: "montserrat";
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+#largeType{
+	padding: 0.5em 2em 0 0;
+	font-size: 4.5em;
+}
+
+
+button a{
+	text-decoration: none;
+}
+
+
+.somethingSmall{
+	display: block;
+	text-align: left;
+}
+
+
+
+/** sections **/
+
+.section{
+	height: 100%;
+	height: 100vh;
+}
+
+#section1{
+	text-align: center;
+}
+
+
+#section2{
+	background:url(../images/mockups/alexuy.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.fillSection{
+	z-index: -1;
+}
+
+#headingBg{
+	position: absolute;
+	background-color: rgba(240,122,0,0.9);
+	height: 3em;
+	width: 27.5em;
+	top: 7.3em;
+	left: 13em;
+
+}
+
+
+/** Buttons **/
+.button{
+	display: inline-block;
+	margin-top: 3em;
+	margin-bottom: 1em;
+	padding: 1em 3em;
+	border: solid #333 1px;
+	background: none;
+	color: #333;
+	letter-spacing: 1.8px;
+	font-size: 0.8em;
+}
+
+.button:hover{
+	background-color: #111;
+	color: #fff;
+}
+

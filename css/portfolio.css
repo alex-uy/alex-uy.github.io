@@ -1,0 +1,72 @@
+#header{
+	height: 100vh;
+	border: solid 45px rgba(208,170,151,0.6);
+	border-bottom: none;
+
+}
+
+
+#main-heading{
+	width: 200px;
+	top: 15em;
+	color: #323232;
+	text-align: center;
+	display: block;
+	left: 50%;
+	margin-left: -100px;
+	position: absolute;
+	height: 100px;
+}
+
+.scrollDown{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 5%;
+	left: 50%;
+	margin-left: -40px;
+	font-family: 'montserrat' lighter;
+	letter-spacing: 1.5px;
+	font-size: 14px;
+	z-index: 100;
+	
+}
+
+.scrollDown a{
+	text-decoration: none;
+	color: #666;
+}
+
+.scrollDown a:hover{
+	color:rgba(208,170,151,0.6);
+}
+
+.scrollDown i{
+	font-size:5em;
+}
+
+
+#section-2{
+	height: 50em;
+	position: relative;
+	
+}
+
+.animateText{
+	opacity:0;
+  	transform:translateX(200px);
+  	display:inline-block;
+  	transition: transform 0.6s, opacity 0.3s;
+}
+
+
+.projectTitle{
+	position: absolute;
+	top: 4em;
+}
+
+#grid{
+	width: 100%;
+	height: 800px;
+	background:red;
+}

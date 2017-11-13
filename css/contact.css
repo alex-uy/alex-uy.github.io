@@ -1,0 +1,169 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/** Typography **/
+
+body{
+	background-color: rgb(227,204,193);
+}
+
+/** Form **/
+
+form{
+	width: 100%;
+	line-height: 3.5em;
+}
+
+label{
+	color: #fff;
+}
+
+::placeholder{
+	color:#fff7f7;
+}
+
+input{
+	border:none;
+	border-bottom: 3px solid #fff;
+	font-size: 35px;
+	-webkit-transition: width 0.4s ease-in-out;
+	outline: none;
+	display: inline-block;
+	box-sizing: border-box;
+	background:none;
+	margin-bottom: 1.5em;
+	color:#fff;
+}
+
+input:focus { 
+/*    font-size: 2em;*/
+	-webkit-transition: width 0.4s ease-in-out;
+	color: #fff7f7;
+}
+
+textarea{
+	border:none;
+	width: 100%;
+	font-size: 35px;
+	outline: none;
+	background:none;
+	color: #fff;
+	display: block;
+}
+
+textarea:focus{
+	color: #fff7f7;
+}
+
+.formButton{
+	border:solid #fff;
+	font-size: 16px;
+	margin-right: 25px;
+	padding: 0 30px;
+}
+
+.formButton:hover{
+	background:#fff;
+	color: rgb(227,204,193);
+}
+
+
+
+
+h1{
+	font-family: 'didot', serif;
+	font-size: 80px;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+
+}
+
+h2{
+	font-family: 'didot', serif;
+	font-size: 70px;
+	letter-spacing: 4.5px;
+	margin:0;
+	padding: 0;
+}
+
+h6{
+	font-family: 'Montserrat', sans-serif;;
+	font-weight: lighter;
+	letter-spacing: 0.12em;
+	
+}
+
+p{
+	letter-spacing: 0.5;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;, sans-serif;;
+	font-weight: lighter;
+	line-height: 1.8em;
+}
+
+
+small{
+	font-family: "montserrat";
+	font-size: 40px;
+}
+
+
+button a{
+	text-decoration: none;
+}
+
+.contact{
+	position: absolute;
+	font-size: 10em;
+	font-family: 'Lato', sans-serif;
+	color: rgba(208,170,151,0.6);
+	-webkit-transform: rotate(270deg);
+	height: 100vh;
+	overflow: hidden;
+	left: -42px;
+	top: 0;
+}
+
+
+/** sections **/
+
+
+#form{
+	margin-top: 5em;
+}
+
+.fillSection{
+	z-index: -1;
+}
+
+#headingBg{
+	position: absolute;
+	background-color: rgba(240,122,0,0.9);
+	height: 3em;
+	width: 27.5em;
+	top: 7.3em;
+	left: 13em;
+
+}
+
+
+/** Buttons **/
+.button{
+	display: inline-block;
+	margin-top: 3em;
+	margin-bottom: 1em;
+	padding: 1em 3em;
+	border: solid #333 1px;
+	background: none;
+	color: #333;
+	letter-spacing: 1.8px;
+	font-size: 0.8em;
+}
+
+.button:hover{
+	background-color: #111;
+	color: #fff;
+}
+
