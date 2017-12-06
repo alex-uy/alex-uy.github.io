@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title> Portfolio | Alex Uy </title>
+        <title> Creative Portfolio | Alex Uy </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">      
         <meta name="description" content="Principal Skinner | Professional Ham Steamer - Oh, no, I said, “steamed hams.” That’s what I call hamburgers."/>
         <meta name="keywords" content="Steamed Hams Skinner Simpsons shitposting"/>
@@ -10,29 +10,140 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css"/>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/portfolio.css">
     </head>
 
     <body>
-        <div id="wrapper"> <!-- start of wrapper -->
-          <div> <!-- start of section1 -->
+        
+
+          <!-- Overlay Nav -->
+      <div>
+        <a class="sticky showBtn xIcon" onclick="overlayShow()">&times;</a>
+        <div id="overlay" class="overlay">
+          <div class="content">
+            <div id="nav">
+              <a href="index.html" onclick="overlayHide()">Home</a>
+              <a href="about.html" onclick="overlayHide()">About</a>
+              <a href="portfolio.html" onclick="overlayHide()">Portfolio</a>
+              <a href="contact.html" onclick="overlayHide()">Contact</a>
+
+              <div id="navSocial">
+                <a href="https://www.instagram.com/alex.uy/?hl=en" onclick="overlayHide()" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a alt="LinkedIn" href="https://www.linkedin.com/in/alex-uy/" onclick="overlayHide()" target="_blank"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>   
+
+            <span id="navNotes"><small> &copy; 2017 Alex Uy</small></span>
+            <a class="closeBtn" onclick="overlayHide()">&times;</a>
+          </div>
+          
+      </div>
+      </div>
+      <!-- End of Nav -->
+
+
+      <div id="wrapper"> <!-- start of wrapper -->
+          <div class="section1"> <!-- start of section1 -->
+
             <div id="main-heading">
-              <h1><span style="color:#444444;">Portfolio</span><br><span style="color:rgba(208,170,151,0.6);">tagline</span></h1>
-              <p>&times; | &times;</p>
+
+              <h1><span style="color:#444444;">Creative</span><br><span style="color:rgba(208,170,151,0.6);">Portfolio</span></h1>
             </div> 
+
           </div> <!-- end of section1 -->
 
-        <span class="scrollDown"><a href="#section-2"><i class="fa fa-angle-down"></i><br>Scroll Down</a></span>
 
-        <section id="section-2"> <!-- start of section 2 -->
-          <div id=grid>
-            <p>ipsum lorem</p>
+
+
+        <section id="PortfolioGrid"> <!-- Portfolio Grid -->
+          <div class="button-group filters-button-group">
+            <button class="portfolioButton is-checked" data-filter="*">All</button>
+            <button class="portfolioButton" data-filter=".photography">Photography</button>
+            <button class="portfolioButton" data-filter=".webDesign">Web Design</button>
+            <button class="portfolioButton" data-filter=".printDesign">Print Design</button>
+            <button class="portfolioButton" data-filter=".digitalDesign">Digital Design</button>
+          </div>
+
+
+          <div class="grid">
+            <div class="element-item webDesign noir" data-category="webDesign">
+              <a href="index.html"><p class="name">Noir</p></a>
+            </div>
+            <div class="element-item webDesign mode" data-category="post-transition">
+              <a href="index.html"><p class="name">MODE</p></a>
+            </div>
+            <div class="element-item digitalDesign webDesign mummaco" data-category="webDesign digitalDesign">
+              <a href="index.html"><p class="name">Mumma Co</p></a>
+            </div>
+            <div class="element-item webDesign aep" data-category="webDesign">
+              <a href="index.html"><p class="name">AEP</p></a>
+            </div>
+            <div class="element-item printDesign physio" data-category="printDesign">
+              <a href="index.html"><p class="name">Physio On Miller</p></a>
+            </div>
+            <div class="element-item digitalDesign tafe" data-category="digitalDesign">
+              <a href="index.html"><p class="name">TAFE</p></a>
+            </div>
+            <div class="element-item digitalDesign think" data-category="digitalDesig">
+              <a href="index.html"><p class="name">THINK Education</p></a>
+            </div>
+            <div class="element-item photography printDesign onkler" data-category="photograhy printDesign">
+              <a href="index.html"><p class="name">ONKLER</p></a>
+            </div>
+            <div class="element-item webDesign olliemax" data-category="webDesign">
+              <a href="index.html"><p class="name">Ollie & Max</p></a>
+            </div>
+            <div class="element-item photography msf" data-category="photography">
+              <a href="index.html"><p class="name">Mountain Sounds Festival</p></a>
+            </div>
           </div>
 
 
         </section> <!-- end of section 2 -->
 
 
+        <footer class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1"> <!-- Start of Footer -->
+        <div class="col-md-4 list-unstyled">
+          <ul>
+            <li>Site</li>
+            <li>Home</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 list-unstyled">
+          <ul>
+            <li>Social</li>
+            <li><i class="fa fa-instagram"></i> Instagram</li>
+            <li><i class="fa fa-pinterest"></i> Pinterest</li>
+            <li><i class="fa fa-facebook-square"></i> Facebook</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 list-unstyled">
+          <ul>
+            <li>Portfolio</li>
+            <li>Design</li>
+            <li>Photography</li>
+            <li>Development</li>
+          </ul>
+        </div>
+
+
+        </footer>  <!-- End of Footer -->
+
+
+
+
+
         </div> <!-- end of wrapper -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+      <!-- <script type="text/javascript" src="js/isotope.pkgd.js"></script> -->
+      <script type="text/javascript" src="js/main.js"></script>
+
     </body>
+
 </html>

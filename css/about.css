@@ -1,6 +1,8 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+
 /** Typography **/
 
 h1{
@@ -96,7 +98,7 @@ button a{
 
 #headingBg{
 	position: absolute;
-	background-color: rgba(240,122,0,0.9);
+	background: #e3ccc1;
 	height: 3em;
 	width: 27.5em;
 	top: 7.3em;

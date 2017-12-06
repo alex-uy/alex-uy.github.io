@@ -1,14 +1,20 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 
+* { box-sizing: border-box; }
+
 /* nav overlay */
 #nav{
 	z-index: 100;
 	background-color: rgb(227,204,193);
 	display:block;
-	margin-top: 200px;
+	margin-top: 150px;
 	font-family: 'didot', serif;
+	font-style: normal;
+	font-weight: 300;
 }
+
+
 
 #nav a{
 	display: block;
@@ -20,10 +26,24 @@
 	transition: 0.2s ease-in-out;
 }
 
+
 #nav a:hover{
 	color: #fff;
 	transform: scale(1.2);
 }
+
+#navSocial{
+	width: 50%;
+	left: 25%;
+	position: absolute;
+	text-align: center;
+	margin-top: 2em;
+}
+
+#navSocial a{
+	display: inline-block;
+}
+
 
 #navNotes{
 	position: absolute;
@@ -151,7 +171,7 @@
   	transform:translateY(200px);
   	display:inline-block;
   	transition: transform 0.4s, opacity 0.3s;
-}2
+}
 
 .animateBtn{
 	opacity:0;
@@ -204,7 +224,7 @@ h2{
 }
 
 h6{
-	font-family: 'Montserrat', sans-serif;;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: lighter;
 	letter-spacing: 0.12em;
 }
@@ -212,7 +232,7 @@ h6{
 p{
 	letter-spacing: 0.5;
 	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;, sans-serif;;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: lighter;
 	line-height: 1.8em;
 }
@@ -257,7 +277,7 @@ button a{
 /** Copy sections **/
 #copy-paragraph{
 	position: absolute;
-	top: 23em;
+	top: 20em;
 	text-align: left;
 }
 
@@ -268,7 +288,7 @@ button a{
 
 #copy-paragraph3{
 	position: absolute;
-	top: 23em;
+	top: 20em;
 	text-align: left;
 }
 
@@ -292,7 +312,7 @@ button a{
 
 #subHeading-3{
 	position: absolute;
-	top: 3em;
+	top: 6em;
 	border-left:rgb(208,170,151) solid 45px;
 	padding-left: 1.5em;
 	border-top: solid 1px #D0AA97;
@@ -343,6 +363,7 @@ button a{
 }
 
 #section-2{
+	display: block;
 	position: relative;
 	height: 45em;
 	margin-bottom: 8em;
@@ -474,7 +495,6 @@ label{
 	margin: 0;
 }
 
-
 footer{
 	font-family: 'Montserrat', sans-serif;
 	border-top: solid 1px #333;
@@ -566,28 +586,7 @@ footer li:nth-child(1){
 
 
 
-/** Gradients **/
-
-#gradient-1{
-	display: block;
-	padding-bottom: 30em;
-	border-radius: 0 0 25px 25px;
-    background: -webkit-linear-gradient(90deg, #FBD547, #FF5ACD); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(90deg, #FBD547, #FF5ACD); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, #FBD547, #FF5ACD); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(90deg, #FBD547, #FF5ACD); /* Standard syntax (must be last) */
-}
-
-
-
-.gradient{
-	position: absolute;
-	background: -webkit-linear-gradient(90deg, #FBD547, #FF5ACD); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(90deg, #FBD547, #FF5ACD); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(90deg, #FBD547, #FF5ACD); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(90deg, #FBD547, #FF5ACD); /* Standard syntax (must be last) */
-    height: 40em;
-}
+/** Images & Fill **/
 
 #header-fill{
 	background: rgba(208,170,151,0.6);
@@ -690,23 +689,74 @@ footer li:nth-child(1){
 
 
 /** Buttons **/
-.homepageButton{
+
+.button{
 	display: inline-block;
-	margin-top: 3em;
-	margin-bottom: 1em;
-	padding: 1em 3em;
-	border: solid #333 1px;
 	background: none;
 	color: #333;
+	border: solid #333 1px;
 	letter-spacing: 1.8px;
 	font-size: 0.8em;
+	padding: 1em 3em;
+	transition: all 0.5s;
+ 	cursor: e-resize;
 }
 
-.homepageButton:hover{
+.button span {
+  cursor: e-resize;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+button:hover{
 	background-color: #111;
 	color: #fff;
+	transition: 0.1s;
 }
 
+.btn:focus {
+  outline: none;
+}
+
+.btnHomeToContact{
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+
+.btnHomeToCaseStudy{
+	display: inline-block;
+	background: none;
+	color: #333;
+	border: solid #333 1px;
+	letter-spacing: 1.8px;
+	font-size: 0.8em;
+	padding: 1em 3em;
+
+	position: absolute;
+	bottom: 14em;
+	left: 10em;
+}
 
 
 .stickyX{
@@ -718,8 +768,6 @@ footer li:nth-child(1){
 	left: 50%;
 	font-size: 40px;
 }
-
-
 
 
 
