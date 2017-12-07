@@ -369,9 +369,15 @@ small{
 	opacity: 1;
 }
 
+.element-item .name:focus{
+	opacity:1;
+}
+
 .element-item a{
 	text-decoration: none;
 }
+
+
 
 
 .element-item.noir{ background-image: url(../images/mockups/eg.jpg); background-position: center; background-size: cover;}
