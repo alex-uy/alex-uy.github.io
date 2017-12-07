@@ -14,22 +14,49 @@
     <div id="wrapper"> 
 
 
+          <!-- Overlay Nav -->
+      <div>
+        <a class="sticky showBtn xIcon" onclick="overlayShow()">&times;</a>
+        <div id="overlay" class="overlay">
+          <div class="content">
+            <div id="nav">
+              <a href="index.html" onclick="overlayHide()">Home</a>
+              <a href="about.html" onclick="overlayHide()">About</a>
+              <a href="portfolio.html" onclick="overlayHide()">Portfolio</a>
+              <a href="contact.html" onclick="overlayHide()">Contact</a>
+
+              <div id="navSocial">
+                <a href="https://www.instagram.com/alex.uy/?hl=en" onclick="overlayHide()" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a alt="LinkedIn" href="https://www.linkedin.com/in/alex-uy/" onclick="overlayHide()" target="_blank"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>   
+
+            <span id="navNotes"><small> &copy; 2017 Alex Uy</small></span>
+            <a class="closeBtn" onclick="overlayHide()">&times;</a>
+          </div>
+          
+      </div>
+      </div>
+      <!-- End of Nav -->
+
+
+
+
         <div class="contact">
             <span>CONTACT</span>
         </div>
         
         <div id="form" class="section1"> <!-- start of section 1 -->
-
-            <form action='form.php' id="contactForm" class="col-md-10 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2"> <!-- Start of Form -->
+            <form action='contact_form.php' id="contactForm" class="col-md-10 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2"> <!-- Start of Form -->
                 <label for="name"><small>Hey! My name is: &nbsp;</small></label>
                     <input id="name" type="text" name="name" placeholder=" First Last" required>
                     <br>
                 <label for="email"><small>My email address is: &nbsp;</small></label>
                     <input id="email" type="email" name="email" placeholder="email@example.com" required>
                         <br>
-                <label for="message"><small>Together we should:</small></label>
+                <label for="message"><small>Your Message:</small></label>
                     <br>
-                    <textarea id="message" type="text" rows="3" placeholder="Work on a project / Get Coffee / Collaborate" required></textarea>
+                    <textarea id="message" type="text" rows="3" placeholder="Together we should..." required></textarea>
 
                 
                <!--  <label><small>Do you like pineapple on pizza's: (Choose Wisely)</small></label>
@@ -49,12 +76,7 @@
             </form> <!-- Enf of Form -->
 
         </div> <!-- end of section 1 -->
-
-        <div style="position: absolute; right:10px; bottom:10px;"><h6><a href="index.html">HOME</a></h6></div>
-        
-
     </div><!-- end of wrapper -->
     <script type="javascript" src="js/main.js"></script>
-
 </body>
 </html>

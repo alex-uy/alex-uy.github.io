@@ -1,6 +1,6 @@
 <?php
 	// Only post if an 'emailaddress' is input
-	if (isset($_POST['emailaddress']))  {
+	if (isset($_POST['alexuydesign@gmail.com']))  {
 	  
 		//Email information
 		$to = strip_tags($_POST['sendtoemail']);
@@ -21,9 +21,6 @@
 		$message .= "<b>First Name:</b>" . strip_tags($_POST['firstname']) . "<br>";
 		$message .= "<b>Last Name:</b>" . strip_tags($_POST['lastname']) . "<br>";
 		$message .= "<b>Email Address:</b>" . strip_tags($_POST['emailaddress']) . "<br>";
-		$message .= "<b>Phone Number:</b>" . strip_tags($_POST['phonenumber']) . "<br>";
-		$message .= "<b>Shoe size</b>" . strip_tags($_POST['shoesize']) . "<br>";
-		$message .= "<b>Newsletter:</b>" . strip_tags($_POST['newsletter']) . "<br>";
 		$message .= "<b>Message:</b>" . strip_tags($_POST['textarea']);
 
 		$message .= "</body></html>";
