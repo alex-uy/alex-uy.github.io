@@ -1,18 +1,72 @@
-/** NAV **/ 
+/**
+	0.0 Images
+	1.0 Nav Overlay
+	2.0 Typography
+	3.0 Portfolio Grid
+	4.0 Sections ()
 
-/* nav overlay */
+
+**/
+
+
+hr{
+	border-top:1px solid #333;
+	border-radius: 25px;
+	width: 70%;
+}
+
+
+
+/** 0.0 IMAGES **/
+
+.portfolioImage{
+	background-size: cover;
+	background-position:center center;
+	background-repeat: no-repeat; 
+	height: 30em;
+	margin: 1em 0;
+	/*display: block;*/
+}
+
+#portfolioImage1{
+	background-color: #999;
+	background-image: url(../images/mockups/ollie&max1.jpg);
+
+}
+
+#portfolioImage2{
+	background-color: #999;
+	background-image: url(../images/mockups/ollie&max2.jpg);
+	height: 25em;
+}
+
+#portfolioImage3{
+	background-color: #999;
+	background-image: url(../images/mockups/ollie&max3.jpg);
+	height: 25em;
+	clear: right;
+}
+
+#portfolioImage4{
+	background-color: #999;
+	background-image: url(../images/mockups/ollie&max4.jpg);
+}
+
+
+
+
+
+/* 1.0 nav overlay */
 #nav{
 	z-index: 100;
 	background-color: rgb(227,204,193);
 	display:block;
 	margin:0 auto;
-	margin-top: 150px;
+	margin-top: 120px;
 	font-family: 'didot', serif;
 	font-style: normal;
 	font-weight: 300;
 }
-
-
 
 #nav a{
 	display: block;
@@ -104,10 +158,7 @@
 	color: #e3ccc1;
 }
 
-
-
-
-
+/** x-Icon **/
 
 
 .xIcon{
@@ -162,42 +213,60 @@
 }
 
 
-
-
-
-
+/** 2.0 TYPOGRAPHY **/
 
 
 h1{
 	font-family: 'didot', serif;
-	font-size: 80px;
+	font-size: 70px;
 	text-align: center;
-
 }
+
+
+h3{
+	font-family: 'didot', serif;
+	font-size: 28px;
+	letter-spacing: 4.5px;
+	margin:0;
+	padding: 10px 0;
+}
+
+p{
+	letter-spacing: 0.5;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+	line-height: 1.8em;
+}
+
+
+small{
+	font-family: "montserrat";
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: right;
+}
+
 
 #main-heading{
 	width: 200px;
-	top: 15em;
+	top: 12em;
 	color: #323232;
 	text-align: center;
 	display: block;
-	left: 45%;
+	left: 40%;
 	margin-left: -100px;
 	position: absolute;
 	border-left:solid #666 3px;
-	padding-left: 2.5em;
+	padding-left: 6em;
 }
 
 
-.section1{
-	border-top: solid rgb(227,204,193) 45px;
-}
 
-
-/** Portfolio Grid **/
+/** 3.0 Portfolio Grid **/
 
 #PortfolioGrid{
-	margin-top: 40em;
+	margin-top: 30em;
 }
 
 
@@ -251,24 +320,16 @@ h1{
 }
 
 /* clear fix */
-/*.grid:after {
+.grid:after {
   content: '';
   display: block;
   clear: both;
-}*/
+}
 
 .grid{
 	text-align: center;
-	margin-left: 30px;
+	margin-left: 20px;
 	margin-bottom: 3em;
-
-}
-
-
-.grid a:hover{
-	text-decoration: underline;
-	text-decoration-color: #fff;
-	opacity: 0;
 }
 
 /* ---- .element-item ---- */
@@ -286,19 +347,31 @@ h1{
   font-size: 12px;
   font-weight: normal;
   margin: 0.5em;
+  text-decoration: none;
 }
+
+
 
 .element-item .name {
   text-align:center;
   font-size: 2em;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   color: #fff;
   padding-top: 30%;
   width: 300px;
   height: 200px;
+  opacity: 0;
+
 }
 
+.element-item .name:hover {
+	opacity: 1;
+}
 
+.element-item a{
+	text-decoration: none;
+}
 
 
 .element-item.noir{ background-image: url(../images/mockups/eg.jpg); background-position: center; background-size: cover;}
@@ -313,8 +386,41 @@ h1{
 .element-item.msf{ background-image: url(../images/mockups/noir2.jpg); background-position: center; background-size: cover;}
 
 
+.element-item:hover{
+	background: rgb(227,204,193);
+}
 
-/** FOOTER **/
+/** 4.0 SECTIONS **/
+
+.section1{
+	border-top: solid rgb(227,204,193) 45px;
+}
+
+.section2{
+	height: 40em;
+}
+
+.section3{
+
+}
+
+.portfolioHeader{
+	height: 40em;
+	display: block;
+	overflow: hidden;
+}
+
+.projectInfo{
+	margin-top: 2em;
+	border-top: solid 4px #333;
+}
+
+.projectDescription{
+	position: absolute;
+	margin-top: 2em;
+}
+
+/** 5.0 FOOTER **/
 
 footer{
 	font-family: 'Montserrat', sans-serif;

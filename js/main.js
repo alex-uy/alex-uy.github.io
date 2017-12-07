@@ -107,13 +107,10 @@ $(document).ready(function() {
 	    $('.animateImageBottom').removeClass('visible');
 	  }
 
-
-
 	});
 });
 
 	// Portfolio Grid
-
 
 
 	// init Isotope
@@ -133,6 +130,8 @@ $(document).ready(function() {
 	  $grid.isotope({ filter: filterValue });
 	});
 	
+
+
 	// change is-checked class on buttons
 	$('.button-group').each( function( i, buttonGroup ) {
 	  var $buttonGroup = $( buttonGroup );
@@ -141,6 +140,8 @@ $(document).ready(function() {
 	    $( this ).addClass('is-checked');
 	  });
 	});
+
+
 
 
 

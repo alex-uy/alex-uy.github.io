@@ -14,60 +14,104 @@
     </head>
 
     <body>
+
+          <!-- Overlay Nav -->
+      <div>
+        <a class="sticky showBtn xIcon" onclick="overlayShow()">&times;</a>
+        <div id="overlay" class="overlay">
+          <div class="content">
+            <div id="nav">
+              <a href="index.html" onclick="overlayHide()">Home</a>
+              <a href="about.html" onclick="overlayHide()">About</a>
+              <a href="portfolio.html" onclick="overlayHide()">Portfolio</a>
+              <a href="contact.html" onclick="overlayHide()">Contact</a>
+
+              <div id="navSocial">
+                <a href="https://www.instagram.com/alex.uy/?hl=en" onclick="overlayHide()" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a alt="LinkedIn" href="https://www.linkedin.com/in/alex-uy/" onclick="overlayHide()" target="_blank"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>   
+
+            <span id="navNotes"><small> &copy; 2017 Alex Uy</small></span>
+            <a class="closeBtn" onclick="overlayHide()">&times;</a>
+          </div>
+          
+      </div>
+      </div>
+      <!-- End of Nav -->
+
+
         <div id="wrapper"> <!-- start of wrapper -->
-            <section id="header"> <!-- start of section 1 (header) -->
-                 <div> <!-- start of nav -->
-                    
-                <!-- Put a logo here & link to homepage-->
-                      <h1 id="main-heading"><span style="color:#444444;">Project:</span><br><span style="color:rgba(208,170,151,0.6);">Fumée</span></h1>
-                      
-                    
-                  </div>
-            </section id="section2"> <!-- end of section 1 -->
-                <div id="portfolioImg1" class="col-md-10"></div>
-            <section id="section-2"> <!-- start of section 2 -->
-                
+          <section class="section1 portfolioHeader"> <!-- start of section 1 -->
+            <div style="margin-top:8em;" class="col-md-8 col-md-offset-2"><h1><span style="color: rgb(227,204,193)">INNOVATIVE</span> APP CONNECTING <span style="color: rgb(227,204,193)">PARENTS & SITTERS,</span></h1></div>
+          </section> <!-- end of section 1 -->
 
-            </section> <!-- end of section 2 -->
+          <section class="section2">
+            <hr>
+
+            <div class="col-md-2 col-md-offset-2">
+              <h3 class="projectInfo">Category:</h3>
+              <p>Web Design</p>
+
+              <h3 class="projectInfo">Role:</h3>
+              <p>Ipsum Lorem is dummy text</p>
+            </div>
+
+            <div class="projectDescription col-md-5 col-md-offset-5">
+              <h3>Description:</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta arcu arcu, vitae ultrices metus vehicula ut. Donec quis ultricies dui. Suspendisse vitae sapien nec magna cursus hendrerit vitae eu dolor. Integer facilisis sed tellus quis iaculis. Quisque congue leo neque, quis varius nisl lobortis sodales. Sed varius et ante ac bibendum. Maecenas tortor erat, posuere at tempus eu, dapibus vitae dui. Etiam sollicitudin ornare eleifend. Vestibulum dapibus felis non elementum faucibus. Nam felis massa, lacinia sit amet sapien sed, pretium pharetra est. Etiam sit amet pretium.
+                <br><br>
+                Vestibulum vestibulum, nisi sed fringilla consequat, metus neque commodo velit, vitae imperdiet sapien arcu vitae eros. Sed nec dui tincidunt, blandit lectus a, ultricies metus. Cras sit amet enim sed nulla eleifend convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+              </p>
+            </div>
+          </section>
 
 
+          <section class="section3 col-md-10 col-md-offset-1">      
+            <div id="portfolioImage1" class="portfolioImage col-md-12"></div>
+            <div id="portfolioImage2" class="portfolioImage col-md-6"></div>
+            <div id="portfolioImage3" class="portfolioImage col-md-6"></div>
+            <div id="portfolioImage4" class="portfolioImage col-md-12"></div>
+          </section>
 
-
-
-            <section> <!-- start of section 3 -->
-            </section> <!-- end of section 3 -->
 
         <footer class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1"> <!-- Start of Footer -->
-      <div class="col-md-4 list-unstyled">
-        <ul>
-          <li>Site</li>
-          <li>Home</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+          <div class="col-md-4 list-unstyled">
+            <ul>
+              <li>Site</li>
+              <li>Home</li>
+              <li>Portfolio</li>
+              <li>Contact</li>
+            </ul>
+          </div>
 
-      <div class="col-md-4 list-unstyled">
-        <ul>
-          <li>Social</li>
-          <li><i class="fa fa-instagram"></i> Instagram</li>
-          <li><i class="fa fa-pinterest"></i> Pinterest</li>
-          <li><i class="fa fa-facebook-square"></i> Facebook</li>
-        </ul>
-      </div>
+          <div class="col-md-4 list-unstyled">
+            <ul>
+              <li>Social</li>
+              <li><i class="fa fa-instagram"></i> Instagram</li>
+              <li><i class="fa fa-pinterest"></i> Pinterest</li>
+              <li><i class="fa fa-facebook-square"></i> Facebook</li>
+            </ul>
+          </div>
 
-      <div class="col-md-4 list-unstyled">
-        <ul>
-          <li>Portfolio</li>
-          <li>Design</li>
-          <li>Photography</li>
-          <li>Development</li>
-        </ul>
-      </div>
-
-
-      </footer>  <!-- End of Footer -->
+          <div class="col-md-4 list-unstyled">
+            <ul>
+              <li>Portfolio</li>
+              <li>Design</li>
+              <li>Photography</li>
+              <li>Development</li>
+            </ul>
+          </div>
+        </footer>  <!-- End of Footer -->
 
         </div> <!-- end of wrapper -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+      <!-- <script type="text/javascript" src="js/isotope.pkgd.js"></script> -->
+      <script type="text/javascript" src="js/main.js"></script>
+
+
     </body>
 </html>
